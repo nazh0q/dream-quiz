@@ -1,0 +1,101 @@
+.choice-container {
+    display: flex;
+    width: 25%;
+    font-size: 1.8rem;
+    background-color: white;
+    border-radius: 25px;
+    border: none;
+    border: 0.1rem solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 1rem 1.4rem 0 rgba(255, 255, 255, 0.5);
+    transform: translateX(0.1rem);
+    transition: transform 150ms;
+    margin-bottom: 1.5rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    max-width: 15%;
+    height: auto;
+    border-radius: 25px;
+    border: none;
+}
+
+.cp1 {
+    background-color: rgba(234,222,105, 1);
+}
+
+.cp2 {
+    background-color: rgba(129, 204, 177, 1);
+}
+
+.choice-text {
+    padding: 1.5rem;
+    font-size: 3.2rem;
+    width: 100%;
+    color: #333333;
+}
+
+.correct:hover {
+    background-color: rgba(129, 204, 177, 1);
+    border: 0.1rem solid rgba(129, 204, 177, 1);
+    box-shadow: 0 1rem 1.4rem 0 rgba(129, 204, 177, 1);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.incorrect:hover {
+    background-color: rgba(234,222,105, 1);
+    border: 0.1rem solid rgba(234,222,105, 1);
+    box-shadow: 0 1rem 1.4rem 0 rgba(234,222,105, 1);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+/* HUD */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: left;
+    color: #ffffff;
+}
+
+.coin {
+    height: 95px;
+    margin-top: 4px;
+    margin-left: -450px;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #ffffff;
+    margin-top: 1.5rem;
+    box-shadow: 0 1rem 1.4rem 0 rgba(255, 255, 255, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+#progressBarFull {
+    height: 3.4rem;
+    background-color: #ffffff;
+    width: 0%;
+    box-shadow: 0 1rem 1.4rem 0 rgba(255, 255, 255, 0.5);
+    transform: translateY(-0.001rem);
+    transition: transform 150ms;
+}

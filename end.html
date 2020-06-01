@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Game-You Finished!</title>
+    <link rel="stylesheet" href="app.css">
+    <link href="//db.onlinewebfonts.com/c/dd266e8a31d9cbae26395f9d100e4e4b?family=AllRoundGothicW01-Book" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <audio id="jazz" autoplay loop>
+        <source src="/endJazz.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+    <div id="container">
+        <canvas id="confeti" width="300" height="300" class="active"></canvas>
+        <div class="container overlay">
+            <div id='end' class="flex-center flex-column">
+                <h1 data-shadow='You Finished' class="overlay dang">You Finished!</h1>
+                <h1 id="finalScore"></h1>
+                <img class="coin" src="dream-coin.gif">
+                <form>
+                    <input type="text" 
+                    name="username" 
+                    id="username"
+                    placeholder="username"/>
+                    <button type="submit" 
+                    class="btn btn-1" 
+                    id="saveScoreBtn" 
+                    onclick="saveHighScore(event)"
+                    disabled
+                    >
+                        Save
+                    </button>
+                </form>
+                <a href="/game.html" class="btn btn-2">Play Again</a>
+                <a href="/" class="btn btn-3">Go Home</a>
+            </div>
+        </div>
+    </div> 
+    <script src="end.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        var audio = document.getElementById("jazz");
+        audio.volume = 0.09;
+      </script>
+</body>
+</html>

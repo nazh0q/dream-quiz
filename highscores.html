@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Scores</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="highscores.css">
+    <link href="//db.onlinewebfonts.com/c/dd266e8a31d9cbae26395f9d100e4e4b?family=AllRoundGothicW01-Book" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <audio id="jazz" autoplay loop>
+        <source src="/highJazz.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+    <div class="container">
+        <div id="highScores" class="flex-center flex-column">
+            <h1 id="finalScore">High Score Dreamers</h1>
+            <ul id="highScoresList"></ul>
+            <a href="/" class="btn">Go Home</a>
+        </div>
+    </div>
+    <script src="highscores.js"></script>
+    <script>
+        var audio = document.getElementById("jazz");
+        audio.volume = 0.09;
+      </script>
+</body>
+</html>

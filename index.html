@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Quiz Demo</title>
+    <link rel="stylesheet" href="app.css">
+    <link href="//db.onlinewebfonts.com/c/dd266e8a31d9cbae26395f9d100e4e4b?family=AllRoundGothicW01-Book" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <audio id="jazz" autoplay loop>
+        <source src="/jazz.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+    <div class="container">
+        <div id="home" class="flex-center flex-column">
+            <h1 class="dream">Dream Quiz</h1>
+            <a class="btn btn-1" href="/game.html">Play</a>
+            <a class="btn btn-2" href="/highscores.html">High Scores</a>
+        </div>
+    </div>
+
+    <script>
+        var audio = document.getElementById("jazz");
+        audio.volume = 0.09;
+      </script>
+</body>
+</html>

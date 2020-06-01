@@ -1,0 +1,279 @@
+@import url(//db.onlinewebfonts.com/c/dd266e8a31d9cbae26395f9d100e4e4b?family=AllRoundGothicW01-Book);
+@font-face {font-family: "AllRoundGothicW01-Book"; src: url("//db.onlinewebfonts.com/t/dd266e8a31d9cbae26395f9d100e4e4b.eot"); src: url("//db.onlinewebfonts.com/t/dd266e8a31d9cbae26395f9d100e4e4b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/dd266e8a31d9cbae26395f9d100e4e4b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/dd266e8a31d9cbae26395f9d100e4e4b.woff") format("woff"), url("//db.onlinewebfonts.com/t/dd266e8a31d9cbae26395f9d100e4e4b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/dd266e8a31d9cbae26395f9d100e4e4b.svg#AllRoundGothicW01-Book") format("svg"); }
+
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    position: relative;
+    font-family: "AllRoundGothicW01-Book";
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body {
+    -webkit-animation: bgcolor 15s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 5.4rem;
+    color: #ffffff;
+    margin-bottom: 5rem;
+}
+
+h1 > span {
+    font-size: 4.2rem;
+    font-weight: 500;
+}
+
+.dream {
+    color: #fff;
+    font-size: 12rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+@keyframes bgcolor {
+    0% {
+        background-color: #fe4a49;
+    }
+
+    30% {
+        background-color: #2ab7ca ;
+    }
+
+    60% {
+        background-color:  #fed766;
+    }
+
+    90% {
+        background-color:  #0e9aa7;
+    }
+
+    100% {
+        background-color:  #fe8a71;
+    }
+}
+
+/* UTILITIES */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.container > * {
+    width: 100%;
+}
+
+.flex-column {
+    display:flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Buttons */
+
+.btn {
+    font-size: 3rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #396189;
+    background-color: #fff;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.btn-1:hover {
+    background-color: rgba(129, 204, 177, 1);
+    border: 0.1rem solid rgba(129, 204, 177, 1);
+    box-shadow: 0 1rem 1.4rem 0 rgba(129, 204, 177, 1);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+    color: #fff;
+}
+
+.btn-2:hover {
+    background-color: rgba(234,222,105, 1);
+    border: 0.1rem solid rgba(234,222,105, 1);
+    box-shadow: 0 1rem 1.4rem 0 rgba(234,222,105, 1);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+    color: #fff;
+}
+
+.btn-3:hover {
+    background-color: rgba(192, 230, 232, 1);
+    border: 0.1rem solid rgba(192, 230, 232, 1);
+    box-shadow: 0 1rem 1.4rem 0 rgba(192, 230, 232, 1);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+    color: #fff;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform:none;
+}
+
+/* FORMS */
+
+/*form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}*/
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+input {
+    border: 0;
+    outline: 0;
+    font-size: 1.8rem;
+    border-radius: 320px;
+    padding: 1.5rem;
+    background-color: #EBECF0;
+    text-shadow: 1px 1px 0 #FFF;
+    margin-right: 8px;
+    box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+    width: 20rem;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+    margin-bottom: 1rem;
+    color: #333;
+}
+input:focus {
+    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+
+input::placeholder {
+    color: #333333;
+}
+
+.coin {
+    height: 95px;
+    margin-top: -128px;
+    margin-left: 110px;
+}
+
+#container {
+    position: relative;
+}
+
+#container canvas, #overlay {
+    position: absolute;
+}
+
+canvas {
+    width:100%;
+    height:100%;
+    z-index: -1;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+
+.dang {
+    display: inline-block;
+    color: white;
+    font-family: 'Righteous', serif;
+    font-size: 12em; 
+    text-shadow: .03em .03em 0 hsl(210, 41%, 38%, 1);
+}
+.dang:after {
+    content: attr(data-shadow);
+    position: absolute;
+    top: .06em; left: .06em;
+    z-index: -1;
+    text-shadow: none;
+    background-image:
+      linear-gradient(
+        45deg,
+        transparent 45%,
+        hsl(219, 89%, 45%, 1) 45%,
+        hsl(219, 89%, 45%, 1) 55%,
+        transparent 0
+        );
+    background-size: .05em .05em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    animation: shad-anim 15s linear infinite;
+}
+
+@keyframes shad-anim {
+  0% {background-position: 0 0}
+  0% {background-position: 100% -100%}
+}
